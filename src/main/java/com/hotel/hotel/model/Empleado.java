@@ -9,11 +9,14 @@ public class Empleado {
     private int cedula;
     private String correo;
     private int telefono;
-    private Date fechaIngreso; // Puedes usar Date si lo prefieres
-    private int fkHotel;
-    private int fkPuesto;
+    private Date fechaIngreso;
 
-    // Getters y Setters
+    private int fkHotel;         // ID de hotel (para insertar)
+    private int fkPuesto;        // ID de puesto (para insertar)
+    private String nombreHotel;  // Nombre descriptivo (para mostrar)
+    private String nombrePuesto;
+
+    // Getters y setters
 
     public Long getIdEmpleado() {
         return idEmpleado;
@@ -78,4 +81,21 @@ public class Empleado {
     public void setFkPuesto(int fkPuesto) {
         this.fkPuesto = fkPuesto;
     }
+
+    public String getNombreHotel() {
+        return nombreHotel;
+    }
+
+    public void setNombreHotel(String nombreHotel) {
+        this.nombreHotel = nombreHotel;
+    }
+
+    public String getNombrePuesto() {
+        return nombrePuesto;
+    }
+
+    public void setNombrePuesto(String nombrePuesto) {
+        this.nombrePuesto = nombrePuesto;
+    }
 }
+
